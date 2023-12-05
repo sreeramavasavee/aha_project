@@ -1,0 +1,41 @@
+{% extends 'dummy.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>Register</title>
+{% endblock %}
+
+
+
+{% block body_block %}
+
+<link rel="stylesheet" href="{% static 'css/registration.css' %}">
+<body>
+    <center>
+        <div class="bgv">
+            <video autoplay muted loop width="100%" >
+                <source src="{% static 'images/earth_revolving.mp4' %}">
+            </video>
+            <h1 class="inside">REGISTER</h1>
+            <div class="one inside">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="div">
+                        {% csrf_token %}
+                        {{ufo.as_p}}
+                        {{pfo.as_p}}
+                        <input type="submit" value="register" class="btn btn-secondary">
+                        <p class="link">Don't have an account</p>
+                        <div class="lion">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-google"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+{% endblock %}

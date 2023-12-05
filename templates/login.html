@@ -1,0 +1,70 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Login</title>
+{% endblock %}
+
+{% block body_block %}
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<body>
+
+	<div class="bgv">
+		<video autoplay muted loop width="100%" height="100%">
+			<source src="{% static 'images/water_drop.mp4' %}">
+		</video>
+		<div class="abc inside">
+			
+			<form class="text-center p-5" method="POST">
+				{% csrf_token %}
+				<div class="imgs">
+					<img src="https://www.centrik.in/wp-content/uploads/2017/02/user-image-.png">
+					<p class="h4 mb-4">Sign in</p>
+				</div>
+				<input type="text" id="un" name="un" class="form-control mb-4" placeholder="Username">
+
+				<input type="password" id="pw" name="pw" class="form-control mb-4" placeholder="Password">
+		
+				<div class="d-flex justify-content-around">
+					<div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="Remember">
+							<label class="custom-control-label" for="Remember">Remember me</label>
+						</div>
+					</div>
+
+					<div>
+						<!-- Forgot password -->
+						<a href="{% url 'reset_password' %}">Forgot password?</a>
+					</div>
+				</div>
+		
+				<!-- Sign in button -->
+				<button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+		
+				<!-- Register -->
+				<p>Not a member?
+					<a href="{% url 'registration' %}">Register</a>
+				</p>
+		
+				<!-- Social login -->
+				<p>or sign in with:</p>
+		
+				<div class="links">
+					<a href="https://www.facebook.com/" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+					<a href="https://twitter.com/?lang=en-in" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+					<a href="https://www.gmail.com/" class="mx-2" role="button"><i class="fa-brands fa-google light-blue-text"></i></a>
+					<a href="https://www.instagram.com/?hl=en" class="mx-2" role="button"><i class="fa-brands fa-instagram light-blue-text"></i></a>
+				</div>
+		
+			</form>
+			<!-- Default form login -->
+		</div>
+	</div>
+	
+</body>
+
+
+
+{% endblock %} 
+

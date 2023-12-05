@@ -1,0 +1,71 @@
+.one
+{
+
+    color: white;
+    font-size: medium;
+    width: 950px;
+    border-radius: 2%;
+    font-weight: bold;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input
+{
+    border-radius: 5%;
+    margin-top: 10px;
+    border-radius: 1%;
+
+}
+textarea
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.div
+{
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    border-radius: 2%;
+}
+.btn
+{
+    margin-left: 20px;
+}
+.lion>a
+{
+    justify-content: center;
+    padding: 20px;
+}
+.lion>a:hover
+{
+    color:rgb(175, 214, 224);
+    width: 150px;
+    height: 100px;
+}
+h1
+{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(11, 168, 182);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bgv>h1
+{
+    margin-left:400px;
+}
+.bgv
+{
+    position: relative;
+}
+.inside
+{
+    position: absolute;
+    top: 0;
+    left: 300px;
+}

@@ -1,0 +1,28 @@
+.abc:hover
+{
+    cursor: pointer;   
+}
+img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.abc
+{
+    width: 400px;
+    /* background-color: rgba(254, 254, 254, 0.5); */
+    border-radius: 10px;
+}
+ 
+.bgv
+{
+    position: relative;
+}
+.inside
+{
+    position: absolute;
+    top: 5px;
+    left: 550px;
+}
